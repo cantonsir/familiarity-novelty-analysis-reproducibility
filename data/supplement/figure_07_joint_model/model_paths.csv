@@ -3,4 +3,4 @@ daily_to_flow,Daily familiarity,Flow (common 12),0.02,-0.08,0.12,#FF9700,solid,1
 aq_to_flow,AQ,Flow (common 12),-0.35,-0.45,-0.24,#0878E8,dashed,2.6
 flow_to_maemuki,Flow (common 12),Maemuki,0.51,0.43,0.59,#FF9700,solid,3.2
 aq_to_maemuki,AQ,Maemuki,-0.40,-0.48,-0.32,#0878E8,dashed,2.9
-daily_aq_correlation,Daily familiarity,AQ,0.23,0.12,0.33,#FF9700,curved,2.0
+daily_aq_correlation,Daily familiarity,AQ,0.23,0.12,0.33,#6F7378,curved,2.0

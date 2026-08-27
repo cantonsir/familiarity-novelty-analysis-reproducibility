@@ -456,7 +456,8 @@ def render_figure_07(data_root: Path, output: Path) -> Path:
     path((0.325, 0.285), (0.440, 0.520), blue, 2.6, True)
     path((0.675, 0.535), (0.745, 0.430), orange, 3.2)
     path((0.325, 0.245), (0.745, 0.370), blue, 2.9, True, -0.05)
-    axis.add_patch(FancyArrowPatch((0.086, 0.575), (0.086, 0.270), arrowstyle="-", linewidth=2.0, color=orange, connectionstyle="arc3,rad=0.65", zorder=1))
+    correlation = paths.loc["daily_aq_correlation"]
+    axis.add_patch(FancyArrowPatch((0.086, 0.575), (0.086, 0.270), arrowstyle="<->", mutation_scale=11, linewidth=float(correlation["line_width"]), color=str(correlation["line_color"]), connectionstyle="arc3,rad=0.65", zorder=1))
     def label(x, y, line1, line2):
         axis.text(x, y, f"{line1}\n{line2}", ha="center", va="center", fontsize=5.8, color=text_color, linespacing=0.92, bbox=dict(boxstyle="round,pad=0.16", facecolor="white", edgecolor="#CED5DC", linewidth=0.55), zorder=5)
     def path_stat(path_id: str) -> tuple[str, str]:
@@ -466,7 +467,6 @@ def render_figure_07(data_root: Path, output: Path) -> Path:
     label(0.397, 0.425, *path_stat("aq_to_flow"))
     label(0.725, 0.635, *path_stat("flow_to_maemuki"))
     label(0.565, 0.185, *path_stat("aq_to_maemuki"))
-    correlation = paths.loc["daily_aq_correlation"]
     label(0.090, 0.420, f"Correlation  r = {float(correlation['standardized_beta']):+.2f}", f"[{float(correlation['ci_low']):+.2f}, {float(correlation['ci_high']):+.2f}]")
     axis.text(0.965, 0.055, rf"Fit: $\chi^2({int(fit['df'])})={float(fit['chi_square']):.2f}$, $p={float(fit['p_value']):.3f}$; CFI = {float(fit['cfi']):.3f}; TLI = {float(fit['tli']):.3f}; RMSEA = {float(fit['rmsea']):.3f}; SRMR = {float(fit['srmr']):.3f}".replace("0.", "."), fontsize=5.7, color=muted, ha="right", va="bottom")
     return _save(figure, output, "Pooled questionnaire joint-association model")
