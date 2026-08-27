@@ -10,6 +10,7 @@ data/main/figure04/questionnaire_pairplot_display.csv,1818,,0,True,True
 data/main/figure04/questionnaire_pairwise_bh6.csv,6,,0,True,True
 data/main/figure05/moderator_screen_bh12.csv,12,,0,True,True
 data/main/figure05/trajectory_observed_and_fitted.csv,54,,0,True,True
+data/n-f-1-participant-trajectories.csv,1560,,0,True,True
 data/n-f-2-to-5-participants.csv,305,,0,True,True
 data/output_input_manifest.csv,33,,0,True,True
 data/participant_data_dictionary.csv,23,,0,True,True

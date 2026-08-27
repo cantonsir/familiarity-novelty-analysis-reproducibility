@@ -1,9 +1,9 @@
-"""Reproduce the eleven active NHB supplementary figures from plot-ready data.
+"""Reproduce the eleven active NHB supplementary figures from released data.
 
-The inputs in ``data/supplement`` are frozen, privacy-reduced analysis tables.
-No task/session export is required.  Geometry and styling below are the values
-used by the active manuscript assets, including the two reader-facing crop/
-relabel variants (Supplementary Figures 5 and 6).
+The inputs are privacy-reduced preprocessed or frozen analysis tables. No raw
+task/session export is required. Geometry and styling below are the values used
+by the active manuscript assets, including the two reader-facing crop/relabel
+variants (Supplementary Figures 5 and 6).
 """
 
 from __future__ import annotations
@@ -19,7 +19,7 @@ from matplotlib.ticker import MaxNLocator
 import numpy as np
 import pandas as pd
 from pypdf import PdfReader, PdfWriter
-from scipy.stats import pearsonr, spearmanr
+from scipy.stats import pearsonr, spearmanr, t
 
 from style import (
     CATEGORY_COLORS,
@@ -261,8 +261,62 @@ def _trajectory(
     add_title_block(figure, title, subtitle)
 
 
+def _summarize_experiment1_trajectories(participants: pd.DataFrame) -> pd.DataFrame:
+    """Recompute participant-balanced E1 means and pointwise 95% t intervals."""
+
+    required = {
+        "experiment1_record_id",
+        "category",
+        "comparison_position",
+        "familiar_target_preference",
+    }
+    missing = required.difference(participants.columns)
+    if missing:
+        raise ValueError(f"Experiment 1 trajectory data missing columns: {sorted(missing)}")
+
+    categories = ["Face", "Scenery", "Geometry", "Car"]
+    if set(participants["category"]) != set(categories):
+        raise ValueError("Experiment 1 trajectory data must contain Face, Scenery, Geometry, and Car")
+    if participants["experiment1_record_id"].nunique() != 15:
+        raise ValueError("Experiment 1 trajectory data must contain 15 release-pseudonymized participants")
+    if participants.duplicated(
+        ["experiment1_record_id", "category", "comparison_position"]
+    ).any():
+        raise ValueError("Duplicate Experiment 1 participant/category/position rows")
+
+    cells = participants.groupby(
+        ["experiment1_record_id", "category"], observed=True
+    )["comparison_position"].agg(["count", "nunique"])
+    if not ((cells["count"] == 26) & (cells["nunique"] == 26)).all():
+        raise ValueError("Every Experiment 1 participant/category curve must contain positions 1--26")
+
+    summary = (
+        participants.groupby(["category", "comparison_position"], observed=True)
+        ["familiar_target_preference"]
+        .agg(observed_mean="mean", participant_sd="std", n_participants="size")
+        .reset_index()
+    )
+    summary["sem"] = summary["participant_sd"] / np.sqrt(summary["n_participants"])
+    critical = t.ppf(0.975, summary["n_participants"] - 1)
+    summary["ci_low"] = summary["observed_mean"] - critical * summary["sem"]
+    summary["ci_high"] = summary["observed_mean"] + critical * summary["sem"]
+    summary["category"] = pd.Categorical(summary["category"], categories=categories, ordered=True)
+    return summary.sort_values(["category", "comparison_position"]).reset_index(drop=True)
+
+
 def render_figure_02(data_root: Path, output: Path) -> Path:
-    data = pd.read_csv(data_root / "figure_02_experiment1_trajectory/plot_data.csv")
+    participants = pd.read_csv(data_root.parent / "n-f-1-participant-trajectories.csv")
+    data = _summarize_experiment1_trajectories(participants)
+    frozen = pd.read_csv(data_root / "figure_02_experiment1_trajectory/plot_data.csv")
+    frozen["category"] = pd.Categorical(
+        frozen["category"], categories=["Face", "Scenery", "Geometry", "Car"], ordered=True
+    )
+    frozen = frozen.sort_values(["category", "comparison_position"]).reset_index(drop=True)
+    numeric = ["observed_mean", "participant_sd", "sem", "ci_low", "ci_high"]
+    if not np.allclose(data[numeric], frozen[numeric], rtol=0.0, atol=1e-12):
+        raise ValueError("Recomputed Experiment 1 trajectory summaries do not match frozen plot data")
+    if not data["n_participants"].equals(frozen["n_participants"]):
+        raise ValueError("Recomputed Experiment 1 participant counts do not match frozen plot data")
     figure = _new_page(2)
     _trajectory(
         figure,

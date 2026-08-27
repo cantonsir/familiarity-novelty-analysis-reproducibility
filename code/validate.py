@@ -305,6 +305,10 @@ def validate_public_data(repository_root: str | Path) -> pd.DataFrame:
             namespace_ok = namespace_ok and bool(
                 frame["manuscript_profile_id"].str.fullmatch(r"P\d{3}").all()
             )
+        if "experiment1_record_id" in frame:
+            namespace_ok = namespace_ok and bool(
+                frame["experiment1_record_id"].str.fullmatch(r"E1A\d{3}").all()
+            )
         if relative.endswith("figure_01_demographics/age_points.csv"):
             namespace_ok = namespace_ok and not {
                 "analysis_record_id",

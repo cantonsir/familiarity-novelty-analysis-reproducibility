@@ -23,6 +23,8 @@ code/
   reproduce_all.py            One-command entry point
   validate.py                 Font, analysis, vector-PDF, and privacy checks
 data/
+  n-f-1-participant-trajectories.csv
+                              Pseudonymized E1 participant-level curves
   n-f-2-to-5-participants.csv Anonymized participant-level analysis file
   participant_data_dictionary.csv
   output_input_manifest.csv   Exact output-to-input routing
@@ -45,12 +47,14 @@ or the large historical figure-building framework is included.
 
 The package deliberately distinguishes three reproducibility levels:
 
-1. **Recomputed analysis + rendering.** Supplementary Tables 4--7 recompute
-   the correlation/BH families from the compact participant file. Their 66
-   rows are cross-checked against the frozen Main Figure 3/4 display inputs
-   before those figures render. Table 8 refits the one-df random-x covariance
-   path model for its point estimates and checks the frozen 10,000-resample
-   intervals.
+1. **Recomputed analysis + rendering.** Supplementary Figure 2 recomputes all
+   participant-balanced means and pointwise 95% t intervals from the compact
+   N-F-1 participant trajectory file, then cross-checks them against the frozen
+   display summary. Supplementary Tables 4--7 recompute the correlation/BH
+   families from the compact N-F-2--5 participant file. Their 66 rows are
+   cross-checked against the frozen Main Figure 3/4 display inputs before those
+   figures render. Table 8 refits the one-df random-x covariance path model for
+   its point estimates and checks the frozen 10,000-resample intervals.
 2. **Plot-data rendering.** Trajectory summaries, participant display
    coordinates, and other plot-ready values are rerendered with the active
    manuscript geometry.
@@ -89,6 +93,8 @@ replaced deterministically.
 
 ## Cohorts retained in the data
 
+- E1 pilot laboratory cohort: 15 participants, represented by 1,560
+  participant/category/comparison-position trajectory rows.
 - E3/E5 matched primary behavioral cohort: 153 participants, 33,048 trials in
   the upstream analysis; final trial/model summaries are released here.
 - E3/E5 all-completer profile cohort: 155 participants.
@@ -101,8 +107,11 @@ cases rather than participant types or clusters.
 
 ### Participant-ID namespaces
 
-Two deliberately different pseudonym namespaces are used:
+Three deliberately different pseudonym namespaces are used:
 
+- `experiment1_record_id` uses `E1A001`--`E1A015` only for the released
+  participant-level N-F-1 trajectory curves. It is not linked to the archived
+  task filenames or to the N-F-2--5 participant file.
 - `analysis_record_id` uses `A001`--`A305` and joins the compact participant
   file to released analysis tables.
 - `manuscript_profile_id` uses `P001`--`P155` only for the within-profile order
@@ -131,10 +140,12 @@ natively; their residual raster differences are recorded rather than hidden.
 
 ## Public-release gate
 
-The demographic microdata used to draw Supplementary Figure 1 were minimized:
-age points are not linked to gender or race, and gender/race are released only
-as aggregate counts. The automated scan rejects common platform identifiers,
-old participant-ID namespaces, and a linked demographic table. This scan does
+The N-F-1 trajectory data use release-only pseudonyms and contain only the
+within-participant preference curves needed for Supplementary Figure 2. The
+demographic microdata used to draw Supplementary Figure 1 were minimized: age
+points are not linked to gender or race, and gender/race are released only as
+aggregate counts. The automated scan rejects common platform identifiers, old
+participant-ID namespaces, and a linked demographic table. This scan does
 **not** establish legal or ethical de-identification.
 
 Do not publish this repository until the corresponding author or data

@@ -1,5 +1,5 @@
 {
-  "created_utc": "2026-08-27T01:49:31.633689+00:00",
+  "created_utc": "2026-08-27T05:59:48.307227+00:00",
   "python": "3.13.5",
   "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
   "packages": {
@@ -14,9 +14,14 @@
   },
   "inputs": [
     {
+      "path": "data/N_F_1_DATA.md",
+      "bytes": 1456,
+      "sha256": "131b8a46355ff7968f01de7270beb6771418906e80b0224659816b91bbf6eeb9"
+    },
+    {
       "path": "data/figure_manifest.csv",
       "bytes": 3964,
-      "sha256": "8a16930b3468614ef23f6ce4166d9d0d776134769cf4ca5685ae3c9ae60801a3"
+      "sha256": "241c8e517e117c4da7048038678e4b5f23bcb2bb84d0adb1a624cec326d61caa"
     },
     {
       "path": "data/main/figure02/observed_trajectory.csv",
@@ -69,14 +74,19 @@
       "sha256": "0d1878dfd48ae2671530447e6f4162e0db00c9c246bda0394e6b18ca9f353856"
     },
     {
+      "path": "data/n-f-1-participant-trajectories.csv",
+      "bytes": 39422,
+      "sha256": "fcb01946273b31e22a1cd56c8178c1ec287ff47e73b28a2affcf8fb7ae3a55be"
+    },
+    {
       "path": "data/n-f-2-to-5-participants.csv",
       "bytes": 51878,
       "sha256": "e75d1fa793f1984cf3692cef8238089f06f22568076fddc2cee19019f2dbf252"
     },
     {
       "path": "data/output_input_manifest.csv",
-      "bytes": 6959,
-      "sha256": "ea5ded0d91a3d5da21161971389aec121f912393b0597703fd494d034f7c264b"
+      "bytes": 7042,
+      "sha256": "8650c2e4b3f51bcd1c2fafc866e24ef14a6eac9360d3221549a3a49b8c5eac6b"
     },
     {
       "path": "data/participant_data_dictionary.csv",
@@ -136,7 +146,7 @@
     {
       "path": "data/supplement/figure_07_joint_model/model_paths.csv",
       "bytes": 451,
-      "sha256": "78c7e051422910f3fb177fa24478b952b967eaa84c7455e4b6da378e5a42f681"
+      "sha256": "6d077c9ebc526d5c6c0fb8ab3c32b62da59852f6de3ca67ebaf48f939c880dd8"
     },
     {
       "path": "data/supplement/figure_08_negative_capability/plot_data.csv",
