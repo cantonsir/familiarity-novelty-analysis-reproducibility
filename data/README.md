@@ -25,6 +25,8 @@ namespaces.
 
 ## Output-specific inputs
 
+- Main Figure 1 has no data input. Its editable design source is in
+  `source/figure_01/`, outside this data directory.
 - `main/`: compact inputs for Main Figures 2--5.
 - `supplement/`: compact inputs for Supplementary Figures 1--11.
 - `tables/`: frozen result rows and metadata for the supplementary tables.

@@ -1,4 +1,5 @@
 output_file,input_files,reproduction_level,note
+outputs/figures/main/main_figure_01.pdf,source/figure_01/main_figure_01_editable.pptx,editable design source + canonical PDF,Conceptual main-manuscript figure; no statistical analysis or data input
 outputs/figures/main/main_figure_02.pdf,data/main/figure02/observed_trajectory.csv; data/main/figure02/participant_profiles.csv,plot-data rendering,Active main-manuscript design and artboard
 outputs/figures/main/main_figure_03.pdf,data/n-f-2-to-5-participants.csv; data/main/figure03/category_daily_bh24.csv; data/main/figure03/category_questionnaire_bh12.csv; data/main/figure03/face_scatter_display.csv,recomputed correlation family + frozen display geometry,Active main-manuscript design and artboard
 outputs/figures/main/main_figure_04.pdf,data/n-f-2-to-5-participants.csv; data/main/figure04/daily_item_trait_bh24.csv; data/main/figure04/questionnaire_pairplot_display.csv; data/main/figure04/questionnaire_pairwise_bh6.csv,recomputed correlation family + frozen display geometry,Active main-manuscript design and artboard

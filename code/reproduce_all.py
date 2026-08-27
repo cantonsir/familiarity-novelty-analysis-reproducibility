@@ -61,7 +61,18 @@ def reproduce(repository_root: str | Path) -> dict[str, object]:
     # participant file. Bind those results to the frozen display rows before
     # any Main Figure 3/4 rendering occurs.
     validate.validate_analysis_crosschecks(root)
-    main_outputs = main_figures.render_all(data_root / "main", main_dir)
+    main_figure_01 = main_dir / "main_figure_01.pdf"
+    main_figure_01_source = (
+        root / "source" / "figure_01" / "main_figure_01_editable.pptx"
+    )
+    if not main_figure_01.is_file() or not main_figure_01_source.is_file():
+        raise FileNotFoundError(
+            "Main Figure 1 requires both its canonical PDF and editable PowerPoint source."
+        )
+    main_outputs = [
+        main_figure_01,
+        *main_figures.render_all(data_root / "main", main_dir),
+    ]
     supplement_outputs = supplementary_figures.render_all(
         data_root / "supplement", supplement_dir
     )
@@ -84,6 +95,13 @@ def reproduce(repository_root: str | Path) -> dict[str, object]:
             "sha256": validate.sha256(arial_path),
         },
         "inputs": _input_manifest(data_root),
+        "editable_sources": [
+            {
+                "path": str(main_figure_01_source.relative_to(root)),
+                "bytes": main_figure_01_source.stat().st_size,
+                "sha256": validate.sha256(main_figure_01_source),
+            }
+        ],
         "outputs": {
             "main_figures": [str(Path(p).relative_to(root)) for p in main_outputs],
             "supplementary_figures": [
@@ -106,7 +124,10 @@ def reproduce(repository_root: str | Path) -> dict[str, object]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Regenerate NHB Main Figures 2–5 and all supplementary figures/tables."
+        description=(
+            "Validate Main Figure 1 and regenerate Main Figures 2–5 plus all "
+            "supplementary figures/tables."
+        )
     )
     parser.add_argument(
         "--repo-root",

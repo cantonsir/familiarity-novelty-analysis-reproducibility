@@ -1,4 +1,5 @@
 figure,comparison_dpi,same_raster_shape,mean_absolute_channel_error_0_255,root_mean_square_channel_error_0_255,exact_rgb_pixel_percent,classification,reference_asset
+Main Figure 1,300,True,0.0,0.0,100.0,canonical file match,manuscipts-figures01.pdf
 Main Figure 2,300,True,0.0,0.0,100.0,pixel-identical,manuscipts-figures02.pdf
 Main Figure 3,300,True,0.0,0.0,100.0,pixel-identical,manuscipts-figures03.pdf
 Main Figure 4,300,True,0.0,0.0,100.0,pixel-identical,manuscipts-figures04.pdf

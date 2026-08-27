@@ -82,7 +82,9 @@ def validate_figures(
 
     Binary hashes are reported for provenance but are not required to match.
     The required-text and vector-only checks prevent a blank, unrelated, or
-    rasterized page from passing solely because its artboard is correct.
+    rasterized page from passing solely because its artboard is correct. Main
+    Figure 1 is the declared exception because its stimulus examples are
+    intentionally embedded images.
     """
 
     root = Path(repository_root).resolve()
@@ -113,6 +115,14 @@ def validate_figures(
                 page.get("/Resources")
             )
             row["vector_only"] = row["raster_image_xobjects"] == 0
+            raster_policy = str(record.get("raster_policy", "forbidden"))
+            if raster_policy not in {"allowed", "forbidden"}:
+                raise ValueError(
+                    f"Unknown raster_policy {raster_policy!r} for {record['figure']}"
+                )
+            row["raster_policy_ok"] = (
+                raster_policy == "allowed" or row["vector_only"]
+            )
             row["artboard_ok"] = (
                 pages == 1
                 and row["width_error_pt"] <= tolerance_pt
@@ -124,13 +134,14 @@ def validate_figures(
             row["content_ok"] = (
                 row["required_text_found"]
                 and row["extracted_text_characters"] >= 40
-                and row["vector_only"]
+                and row["raster_policy_ok"]
             )
         else:
             row["artboard_ok"] = False
             row["binary_reference_match"] = False
             row["required_text_found"] = False
             row["vector_only"] = False
+            row["raster_policy_ok"] = False
             row["content_ok"] = False
         rows.append(row)
     report = pd.DataFrame(rows)
@@ -140,7 +151,13 @@ def validate_figures(
     if not report["content_ok"].all():
         bad = report.loc[
             ~report["content_ok"],
-            ["figure", "output_file", "required_text_found", "vector_only"],
+            [
+                "figure",
+                "output_file",
+                "required_text_found",
+                "vector_only",
+                "raster_policy_ok",
+            ],
         ]
         raise AssertionError(
             "Figure content validation failed:\n" + bad.to_string(index=False)

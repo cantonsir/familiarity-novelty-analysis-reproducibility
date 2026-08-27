@@ -5,3 +5,4 @@
 *.py text eol=lf
 *.tex text eol=lf
 *.pdf binary
+*.pptx binary

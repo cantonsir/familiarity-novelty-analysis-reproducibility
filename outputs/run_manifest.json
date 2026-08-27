@@ -1,5 +1,5 @@
 {
-  "created_utc": "2026-08-27T06:12:23.466333+00:00",
+  "created_utc": "2026-08-27T06:23:58.458034+00:00",
   "python": "3.13.5",
   "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
   "packages": {
@@ -15,13 +15,13 @@
   "inputs": [
     {
       "path": "data/README.md",
-      "bytes": 2141,
-      "sha256": "5a594afce0abf2b4de982a76b9fec2f959e1a466bb0c8b8c7e1fdecdf943ecb7"
+      "bytes": 2261,
+      "sha256": "7e48fe712943c8a7a84ad15d963787749eb3696dd370da8faf7cd63808fa91ce"
     },
     {
       "path": "data/figure_manifest.csv",
-      "bytes": 3964,
-      "sha256": "241c8e517e117c4da7048038678e4b5f23bcb2bb84d0adb1a624cec326d61caa"
+      "bytes": 4373,
+      "sha256": "bcf8ff1c7ee597a892da351dd5db8cb1f316ef3d19ebe47eb407aa85dc3a085b"
     },
     {
       "path": "data/main/figure02/observed_trajectory.csv",
@@ -85,8 +85,8 @@
     },
     {
       "path": "data/output_input_manifest.csv",
-      "bytes": 7042,
-      "sha256": "8650c2e4b3f51bcd1c2fafc866e24ef14a6eac9360d3221549a3a49b8c5eac6b"
+      "bytes": 7240,
+      "sha256": "435573270b3b135a68d6520a2b73d354cd6f44d4e81c01553d25be49edb73ae5"
     },
     {
       "path": "data/participant_data_dictionary.csv",
@@ -299,8 +299,16 @@
       "sha256": "cf88febd04ae5de52921df5dc3b1e5058703a0a28a3201c34bb11ce530a4ed7c"
     }
   ],
+  "editable_sources": [
+    {
+      "path": "source/figure_01/main_figure_01_editable.pptx",
+      "bytes": 7833103,
+      "sha256": "54c528ed976f6264c52ca582847bea3b371fa0a9efcd4fae0e1a421c9dc3ac36"
+    }
+  ],
   "outputs": {
     "main_figures": [
+      "outputs/figures/main/main_figure_01.pdf",
       "outputs/figures/main/main_figure_02.pdf",
       "outputs/figures/main/main_figure_03.pdf",
       "outputs/figures/main/main_figure_04.pdf",

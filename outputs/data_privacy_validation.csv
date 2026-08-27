@@ -1,5 +1,5 @@
 data_file,rows,forbidden_columns,forbidden_value_hits,public_identifier_check,namespace_and_minimization_check
-data/figure_manifest.csv,15,,0,True,True
+data/figure_manifest.csv,16,,0,True,True
 data/main/figure02/observed_trajectory.csv,54,,0,True,True
 data/main/figure02/participant_profiles.csv,155,,0,True,True
 data/main/figure03/category_daily_bh24.csv,24,,0,True,True
@@ -12,7 +12,7 @@ data/main/figure05/moderator_screen_bh12.csv,12,,0,True,True
 data/main/figure05/trajectory_observed_and_fitted.csv,54,,0,True,True
 data/n-f-1-participant-trajectories.csv,1560,,0,True,True
 data/n-f-2-to-5-participants.csv,305,,0,True,True
-data/output_input_manifest.csv,33,,0,True,True
+data/output_input_manifest.csv,34,,0,True,True
 data/participant_data_dictionary.csv,23,,0,True,True
 data/supplement/figure_01_demographics/age_points.csv,303,,0,True,True
 data/supplement/figure_01_demographics/gender_counts.csv,4,,0,True,True

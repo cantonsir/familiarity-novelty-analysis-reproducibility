@@ -3,7 +3,8 @@
 This compact, reviewer-facing repository regenerates the displayed analyses
 for the Nature Human Behaviour manuscript:
 
-- Main Figures 2–5 (Figure 1 is intentionally outside this repository);
+- Main Figure 1 as a canonical PDF with its editable PowerPoint source;
+- analysis-generated Main Figures 2–5;
 - Supplementary Figures 1–11;
 - Supplementary Tables 1–16; and
 - the two unnumbered tabular displays in the Supplementary Information.
@@ -37,6 +38,8 @@ data/
   main/                       Final plot data for Main Figures 2–5
   supplement/                 Final plot data for Supplementary Figures 1–11
   tables/                     Frozen result tables and study metadata
+source/
+  figure_01/                  Editable PowerPoint source for Main Figure 1
 notebooks/
   01_figures_and_tables_from_preprocessed_data.ipynb
 outputs/
@@ -47,6 +50,12 @@ outputs/
 
 No task code, raw task exports, platform identifiers, submission identifiers,
 or the large historical figure-building framework is included.
+
+Main Figure 1 is a conceptual design figure rather than an analytical result.
+Its editable PowerPoint is retained under `source/figure_01/`, and the supplied
+PDF under `outputs/figures/main/` is the canonical publication appearance.
+Main Figures 2--5 and all supplementary figures/tables follow the scripted
+data-to-output routes described below.
 
 See [`data/README.md`](data/README.md) for the data boundary and
 [`data/output_input_manifest.csv`](data/output_input_manifest.csv) for the
@@ -89,8 +98,9 @@ The package deliberately distinguishes three reproducibility levels:
 
 This boundary keeps the repository small while making every displayed number
 and graphical element inspectable. `data/output_input_manifest.csv` links all
-33 figure/table components to their exact inputs; the notebook displays this
-map. `outputs/run_manifest.json` records input hashes and software versions.
+34 figure/table components to their exact inputs or editable source; the
+notebook displays this map. `outputs/run_manifest.json` records input hashes,
+the Figure 1 source hash, and software versions.
 
 ## Quick start
 
@@ -160,16 +170,18 @@ The explicit crosswalk is stored in
 ## Output validation
 
 `data/figure_manifest.csv` records the active manuscript filename, artboard,
-required text sentinel, and SHA-256 reference hash for each of the 15 figure
-PDFs. Validation requires one correctly sized, nonblank, vector-only page with
+required text sentinel, raster policy, and SHA-256 reference hash for each of
+the 16 figure PDFs. Validation requires one correctly sized, nonblank page with
 the expected figure text, all 18 table fragments, the exact cohort sizes, and
-agreement between recomputed and displayed correlation families. Binary PDF
-identity is reported only as provenance: metadata and PDF object ordering can
-differ without changing the rendered page.
+agreement between recomputed and displayed correlation families. The analysis
+figures must remain vector-only; Main Figure 1 explicitly permits embedded
+stimulus images. Binary PDF identity is reported only as provenance: metadata
+and PDF object ordering can differ without changing the rendered page.
 
 `outputs/manuscript_visual_parity.csv` is the author-side raster comparison
-against the active LaTeX assets. Main Figures 2--5 are pixel-identical at 300
-dpi. Supplementary figures are exact/near-exact except the three legacy
+against the active LaTeX assets. Main Figure 1 is the canonical manuscript PDF,
+and Main Figures 2--5 are pixel-identical at 300 dpi. Supplementary figures are
+exact/near-exact except the three legacy
 crop/relabel assets (5, 6, and 11), whose reader-facing pages are recreated
 natively; their residual raster differences are recorded rather than hidden.
 
@@ -192,6 +204,8 @@ archive and publish only the aggregate/result-level inputs.
 ### GitHub release checklist
 
 - [ ] Confirm participant-level data and age-point sharing approval.
+- [ ] Confirm redistribution rights for the stimulus images embedded in Main
+      Figure 1 and review the PowerPoint document metadata before publication.
 - [ ] Add the author-approved code and data license or licenses.
 - [ ] Add final citation metadata, author list, repository URL, and DOI when
       available.
