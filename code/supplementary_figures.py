@@ -445,15 +445,17 @@ def render_figure_07(data_root: Path, output: Path) -> Path:
     axis = figure.add_axes([0, 0, 1, 1]); axis.set_xlim(0, 1); axis.set_ylim(0, 1); axis.axis("off")
     axis.text(0.035, 0.935, "Pooled questionnaire joint-association model", fontsize=12.5, fontweight="bold", color=text_color, ha="left", va="top")
     axis.text(0.035, 0.825, "Same n = 303 cohort  ·  standardized coefficients [95% stratified-bootstrap CI]  ·  observational", fontsize=7.1, color=muted, ha="left", va="top")
-    nodes = [((0.205, 0.600), "Daily\nfamiliarity", False), ((0.205, 0.245), "AQ", False), ((0.555, 0.570), "Flow\n(common 12)", True), ((0.865, 0.385), "Maemuki", True)]
+    nodes = [((0.205, 0.600), "Daily\nfamiliarity", False), ((0.205, 0.245), "AQ", False), ((0.555, 0.570), "Flow", True), ((0.865, 0.385), "Maemuki", True)]
     for center, label, highlighted in nodes:
         width, height = 0.23, 0.145
         axis.add_patch(FancyBboxPatch((center[0] - width / 2, center[1] - height / 2), width, height, boxstyle="round,pad=0.012,rounding_size=0.015", linewidth=1.3, edgecolor=blue if highlighted else "#6F7378", facecolor="#E7F2FF" if highlighted else "#F7F7F9", zorder=3))
         axis.text(*center, label, ha="center", va="center", fontsize=8.2, fontweight="bold", color=text_color, zorder=4, linespacing=1.0)
-    def path(start, end, color, width, dashed=False, rad=0.0):
-        axis.add_patch(FancyArrowPatch(start, end, arrowstyle="-|>", mutation_scale=11, linewidth=width, linestyle="--" if dashed else "-", color=color, connectionstyle=f"arc3,rad={rad}", shrinkA=0, shrinkB=0, zorder=2))
+    def path(start, end, color, width, dashed=False, rad=0.0, arrow_scale=11):
+        axis.add_patch(FancyArrowPatch(start, end, arrowstyle="-|>", mutation_scale=arrow_scale, linewidth=width, linestyle="--" if dashed else "-", color=color, connectionstyle=f"arc3,rad={rad}", shrinkA=0, shrinkB=0, zorder=2))
     path((0.325, 0.600), (0.430, 0.580), orange, 1.3)
-    path((0.325, 0.285), (0.440, 0.520), blue, 2.6, True)
+    # Keep the larger arrowhead just outside the Flow node so its direction is
+    # unmistakable at manuscript scale.
+    path((0.325, 0.285), (0.470, 0.490), blue, 2.6, True, arrow_scale=14)
     path((0.675, 0.535), (0.745, 0.430), orange, 3.2)
     path((0.325, 0.245), (0.745, 0.370), blue, 2.9, True, -0.05)
     correlation = paths.loc["daily_aq_correlation"]
