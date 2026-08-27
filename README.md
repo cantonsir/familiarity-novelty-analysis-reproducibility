@@ -184,30 +184,3 @@ and Main Figures 2--5 are pixel-identical at 300 dpi. Supplementary figures are
 exact/near-exact except the three legacy
 crop/relabel assets (5, 6, and 11), whose reader-facing pages are recreated
 natively; their residual raster differences are recorded rather than hidden.
-
-## Public-release gate
-
-The N-F-1 trajectory data use release-only pseudonyms and contain only the
-within-participant preference curves needed for Supplementary Figure 2. The
-demographic microdata used to draw Supplementary Figure 1 were minimized: age
-points are not linked to gender or race, and gender/race are released only as
-aggregate counts. The automated scan rejects common platform identifiers, old
-participant-ID namespaces, and a linked demographic table. This scan does
-**not** establish legal or ethical de-identification.
-
-Do not publish this repository until the corresponding author or data
-controller confirms that the participant-level derived file and age points may
-be shared under the study consent, IRB/ethics terms, and institutional data-
-sharing policy. If approval does not cover those rows, keep them in a controlled
-archive and publish only the aggregate/result-level inputs.
-
-### GitHub release checklist
-
-- [ ] Confirm participant-level data and age-point sharing approval.
-- [ ] Confirm redistribution rights for the stimulus images embedded in Main
-      Figure 1 and review the PowerPoint document metadata before publication.
-- [ ] Add the author-approved code and data license or licenses.
-- [ ] Add final citation metadata, author list, repository URL, and DOI when
-      available.
-- [ ] Run `python3 code/reproduce_all.py` in a clean environment.
-- [ ] Confirm every validation report passes before creating a release.
