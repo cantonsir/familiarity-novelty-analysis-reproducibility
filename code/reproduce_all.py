@@ -112,7 +112,7 @@ def main() -> None:
         "--repo-root",
         type=Path,
         default=Path(__file__).resolve().parents[1],
-        help="Root of fn_nhb_analysis_reproducibility (default: inferred).",
+        help="Root of fn_analysis_reproducibility (default: inferred).",
     )
     args = parser.parse_args()
     result = reproduce(args.repo_root)

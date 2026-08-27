@@ -1,7 +1,7 @@
-# F/N manuscript figure and table reproduction
+# Familiarity/novelty analysis reproducibility
 
-This compact repository regenerates the displayed analyses requested for the
-Nature Human Behaviour manuscript:
+This compact, reviewer-facing repository regenerates the displayed analyses
+for the Nature Human Behaviour manuscript:
 
 - Main Figures 2–5 (Figure 1 is intentionally outside this repository);
 - Supplementary Figures 1–11;
@@ -11,6 +11,11 @@ Nature Human Behaviour manuscript:
 The figures use the same fixed artboards, Arial typography, colors, markers,
 panel labels, annotations, and panel geometry as the active manuscript and
 Supplementary Information. This is not a generic restyling of the results.
+
+> **Before public release:** participant-level derived data and age points must
+> be approved for sharing under the applicable consent, ethics/IRB, and
+> institutional policies. An automated identifier scan is included, but it is
+> not a substitute for that approval.
 
 ## Repository contents
 
@@ -43,6 +48,25 @@ outputs/
 No task code, raw task exports, platform identifiers, submission identifiers,
 or the large historical figure-building framework is included.
 
+See [`data/README.md`](data/README.md) for the data boundary and
+[`data/output_input_manifest.csv`](data/output_input_manifest.csv) for the
+exact input files used by every output.
+
+## Command line or notebook?
+
+The command line is the canonical reproduction route:
+
+```bash
+python code/reproduce_all.py
+```
+
+The executed
+[`01_figures_and_tables_from_preprocessed_data.ipynb`](notebooks/01_figures_and_tables_from_preprocessed_data.ipynb)
+is retained as an optional reviewer walkthrough. It summarizes the cohorts,
+shows the output-to-input map, runs the same command-line pipeline, and displays
+the validation reports. It does not duplicate or hide a second analysis
+implementation. Reviewers who prefer scripts can ignore the notebook.
+
 ## Reproduction level
 
 The package deliberately distinguishes three reproducibility levels:
@@ -68,7 +92,7 @@ and graphical element inspectable. `data/output_input_manifest.csv` links all
 33 figure/table components to their exact inputs; the notebook displays this
 map. `outputs/run_manifest.json` records input hashes and software versions.
 
-## Run everything
+## Quick start
 
 Python 3.11 or newer is recommended. Arial must be installed to reproduce the
 manuscript typography; the command fails before rendering if Arial is absent.
@@ -76,10 +100,10 @@ manuscript typography; the command fails before rendering if Arial is absent.
 proof. The 18 TeX table fragments are generated without it.
 
 ```bash
-python -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install -r requirements.txt
-python code/reproduce_all.py
+python3 -m pip install -r requirements.txt
+python3 code/reproduce_all.py
 ```
 
 Or open and run the single notebook:
@@ -88,8 +112,19 @@ Or open and run the single notebook:
 jupyter lab notebooks/01_figures_and_tables_from_preprocessed_data.ipynb
 ```
 
-The command and notebook write the same outputs. Existing output files are
-replaced deterministically.
+The command and notebook write the same analytical outputs. PDF byte hashes can
+differ because creation metadata and PDF object ordering may change, so the
+validation checks rendered content, artboards, live vector text, data
+cross-checks, and privacy constraints rather than requiring binary identity.
+
+On success, inspect:
+
+- `outputs/figures/` for the regenerated figure PDFs;
+- `outputs/tables/` for the regenerated table fragments and proof PDF;
+- `outputs/figure_validation.csv` and `outputs/table_validation.csv`;
+- `outputs/analysis_crosscheck.csv` and
+  `outputs/data_privacy_validation.csv`; and
+- `outputs/run_manifest.json` for software versions and input SHA-256 hashes.
 
 ## Cohorts retained in the data
 
@@ -154,6 +189,11 @@ be shared under the study consent, IRB/ethics terms, and institutional data-
 sharing policy. If approval does not cover those rows, keep them in a controlled
 archive and publish only the aggregate/result-level inputs.
 
-Also add author-approved code/data licenses and final citation/DOI metadata
-before GitHub or archival release; these cannot be inferred from the analysis
-files.
+### GitHub release checklist
+
+- [ ] Confirm participant-level data and age-point sharing approval.
+- [ ] Add the author-approved code and data license or licenses.
+- [ ] Add final citation metadata, author list, repository URL, and DOI when
+      available.
+- [ ] Run `python3 code/reproduce_all.py` in a clean environment.
+- [ ] Confirm every validation report passes before creating a release.
