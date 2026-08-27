@@ -1,0 +1,7 @@
+left_label,left_column,right_label,right_column,n,rho,p_value,q_bh,bh
+Maemuki,maemuki_score,Flow attitude,flow_original,303,0.6284471337118682,1.0517137605573602e-34,6.310282563344161e-34,yes
+AQ,aq_score,Maemuki,maemuki_score,303,-0.5843420673007553,3.890035078855181e-29,1.1670105236565542e-28,yes
+AQ,aq_score,Flow attitude,flow_original,303,-0.3311669670126313,3.4563140595614147e-09,6.912628119122829e-09,yes
+AQ,aq_score,Daily familiarity,daily_familiarity,303,0.23449507768316488,3.746431378058234e-05,5.619647067087351e-05,yes
+Daily familiarity,daily_familiarity,Maemuki,maemuki_score,303,-0.21425989452785676,0.00017133349840782415,0.00020560019808938895,yes
+Daily familiarity,daily_familiarity,Flow attitude,flow_original,303,-0.07448175685614589,0.1960339129535738,0.19603391295357384,no

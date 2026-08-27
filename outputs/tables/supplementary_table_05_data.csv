@@ -1,0 +1,25 @@
+left_label,left_column,right_label,right_column,n,rho,p_value,q_bh,bh,display_source
+Face FNI,face_fni,Books/magazines,daily_books,153,-0.0014,0.98602,0.98602,no,active_display_freeze_within_tolerance
+Face FNI,face_fni,Clothes,daily_clothes,153,0.0058,0.94285,0.98602,no,active_display_freeze_within_tolerance
+Face FNI,face_fni,Digital games,daily_games,153,0.0187,0.81863,0.98602,no,active_display_freeze_within_tolerance
+Face FNI,face_fni,Food/cuisine,daily_food,153,0.0773,0.34256,0.81561,no,active_display_freeze_within_tolerance
+Face FNI,face_fni,Movies/videos,daily_movies,153,-0.1248,0.12425,0.55304,no,active_display_freeze_within_tolerance
+Face FNI,face_fni,Places/activities,daily_places,153,-0.0041,0.95997,0.98602,no,active_display_freeze_within_tolerance
+Face FNI,face_fni,Restaurant,daily_restaurant,153,-0.0413,0.61237,0.95486,no,active_display_freeze_within_tolerance
+Face FNI,face_fni,Snacks/treats,daily_snacks,153,0.0791,0.33092,0.81561,no,active_display_freeze_within_tolerance
+Geometry FNI,geometry_fni,Books/magazines,daily_books,153,0.1423,0.07941,0.55304,no,active_display_freeze_within_tolerance
+Geometry FNI,geometry_fni,Clothes,daily_clothes,153,-0.0366,0.65318,0.95486,no,active_display_freeze_within_tolerance
+Geometry FNI,geometry_fni,Digital games,daily_games,153,-0.1204,0.13826,0.55304,no,active_display_freeze_within_tolerance
+Geometry FNI,geometry_fni,Food/cuisine,daily_food,153,0.0282,0.72968,0.9729,no,active_display_freeze_within_tolerance
+Geometry FNI,geometry_fni,Movies/videos,daily_movies,153,0.034,0.67636,0.95486,no,active_display_freeze_within_tolerance
+Geometry FNI,geometry_fni,Places/activities,daily_places,153,0.1515,0.06165,0.55304,no,active_display_freeze_within_tolerance
+Geometry FNI,geometry_fni,Restaurant,daily_restaurant,153,0.0092,0.90996,0.98602,no,active_display_freeze_within_tolerance
+Geometry FNI,geometry_fni,Snacks/treats,daily_snacks,153,0.1436,0.07649,0.55304,no,active_display_freeze_within_tolerance
+Scenery FNI,scenery_fni,Books/magazines,daily_books,153,0.1336,0.09969,0.55304,no,active_display_freeze_within_tolerance
+Scenery FNI,scenery_fni,Clothes,daily_clothes,153,-0.0182,0.82316,0.98602,no,active_display_freeze_within_tolerance
+Scenery FNI,scenery_fni,Digital games,daily_games,153,-0.0674,0.4078,0.81561,no,active_display_freeze_within_tolerance
+Scenery FNI,scenery_fni,Food/cuisine,daily_food,153,0.0359,0.65945,0.95486,no,active_display_freeze_within_tolerance
+Scenery FNI,scenery_fni,Movies/videos,daily_movies,153,0.0353,0.66477,0.95486,no,active_display_freeze_within_tolerance
+Scenery FNI,scenery_fni,Places/activities,daily_places,153,0.0723,0.37479,0.81561,no,active_display_freeze_within_tolerance
+Scenery FNI,scenery_fni,Restaurant,daily_restaurant,153,0.0728,0.37144,0.81561,no,active_display_freeze_within_tolerance
+Scenery FNI,scenery_fni,Snacks/treats,daily_snacks,153,0.0893,0.27206,0.81561,no,active_display_freeze_within_tolerance

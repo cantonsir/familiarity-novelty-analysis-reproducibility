@@ -1,0 +1,4 @@
+category,metric,scope,n_participants,n_random_partitions,seed,half_r_median,half_r_partition_p2_5,half_r_partition_p97_5,spearman_brown_median,spearman_brown_partition_p2_5,spearman_brown_partition_p97_5,interval_definition
+Face,fni,Pooled residualized,153,10000,20260726,0.1334562642495683,0.031617165282543,0.2470191909666954,0.2354855116689962,0.0612963147683624,0.3961754435445689,partition randomness; not participant-sampling CI
+Scenery,fni,Pooled residualized,153,10000,20260732,0.3060809660221869,0.2105057999430871,0.407762006962197,0.4687013653303034,0.3477980854560034,0.5793053156339699,partition randomness; not participant-sampling CI
+Geometry,fni,Pooled residualized,153,10000,20260738,0.1923847990763664,0.0849206554216228,0.3094689471546901,0.3226891171307514,0.1565472161907836,0.4726632850595277,partition randomness; not participant-sampling CI

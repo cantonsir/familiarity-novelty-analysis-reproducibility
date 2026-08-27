@@ -1,0 +1,6 @@
+experiment,setting,n,age_mean,age_sd,median,age_min,age_max,female_n,female_pct,male_n,male_pct
+E2,Laboratory,24,25.08,10.24,21,18,62,14,58.3,10,41.7
+E3,Laboratory,22,21.91,6.41,19,18,46,14,63.6,8,36.4
+E4,Online,126,39.60,12.65,36.5,18,81,52,41.3,74,58.7
+E5,Online,131,36.37,12.16,35,19,78,79,60.3,52,39.7
+Pooled,Mixed,303,35.77,13.04,34,18,81,159,52.5,144,47.5

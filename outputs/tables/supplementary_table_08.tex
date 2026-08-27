@@ -1,0 +1,21 @@
+\begin{table}[!htbp]
+\centering
+\caption{Questionnaire relationships in the joint model.}
+\label{tab:sem-path-sensitivity}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.15cm}>{\raggedright\arraybackslash}X r r c c@{}}
+\toprule
+Analysis sample & Model relationship & $n$ & \shortstack{Standardized\\coefficient} & 95\% bootstrap CI & \shortstack{95\% CI\\excludes zero?} \\
+\midrule
+Primary QC-clean & Daily familiarity $\rightarrow$ Flow (common 12) & 303 & .022 & [-.080, .121] & no \\
+Primary QC-clean & AQ $\rightarrow$ Flow (common 12) & 303 & -.348 & [-.448, -.240] & yes \\
+Primary QC-clean & AQ $\rightarrow$ Maemuki & 303 & -.398 & [-.476, -.322] & yes \\
+Primary QC-clean & Flow (common 12) $\rightarrow$ Maemuki & 303 & .514 & [.432, .591] & yes \\
+Primary QC-clean & Daily familiarity--AQ correlation & 303 & .229 & [.125, .329] & yes \\
+\bottomrule
+\end{tabularx}
+\vspace{0.5em}
+\noindent\begin{minipage}{\textwidth}\footnotesize\textit{Note.} Standardized coefficients are shown with 95\% percentile-bootstrap intervals from 10,000 experiment-stratified participant resamples. Flow is the harmonized common-12 score. Single-headed paths are regression relationships estimated jointly and do not imply causality. The Daily familiarity--AQ row is their standardized correlation and is not directional.\end{minipage}
+\end{table}

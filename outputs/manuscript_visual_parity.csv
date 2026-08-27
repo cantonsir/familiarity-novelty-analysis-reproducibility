@@ -1,0 +1,16 @@
+figure,comparison_dpi,same_raster_shape,mean_absolute_channel_error_0_255,root_mean_square_channel_error_0_255,exact_rgb_pixel_percent,classification,reference_asset
+Main Figure 2,300,True,0.0,0.0,100.0,pixel-identical,manuscipts-figures02.pdf
+Main Figure 3,300,True,0.0,0.0,100.0,pixel-identical,manuscipts-figures03.pdf
+Main Figure 4,300,True,0.0,0.0,100.0,pixel-identical,manuscipts-figures04.pdf
+Main Figure 5,300,True,0.0,0.0,100.0,pixel-identical,manuscipts-figures05.pdf
+Supplementary Figure 1,300,True,0.0003897606486246315,0.10191373120804757,99.99356133102523,near-exact raster match,participant_demographics_e2_e5.pdf
+Supplementary Figure 2,300,True,0.0,0.0,100.0,pixel-identical,experiment1_four_category_trajectories.pdf
+Supplementary Figure 3,300,True,0.1566230765557167,5.426459534172343,99.8704122172587,near-exact raster match,experiment4_category_trial_trajectories.pdf
+Supplementary Figure 4,300,True,0.001226974814371291,0.2444838605840554,99.99681512053375,near-exact raster match,raw_fni_pattern_counts_sign_and_neutral_band_supplement.pdf
+Supplementary Figure 5,300,True,0.8517710410247115,8.788776527158927,97.56215636517432,reader-facing native recreation of legacy crop/relabel,selected_participant_profile_details.pdf
+Supplementary Figure 6,300,True,0.505675318586711,5.476393450396296,98.40813195243575,reader-facing native recreation of legacy crop/relabel,Figure_S12_individual_difference_sensitivity.pdf
+Supplementary Figure 7,300,True,0.0,0.0,100.0,pixel-identical,conditional_questionnaire_association_model.pdf
+Supplementary Figure 8,300,True,0.00023947198143508904,0.03206408572919571,99.99032505748356,near-exact raster match,negative_capability_questionnaire_correlations.pdf
+Supplementary Figure 9,300,True,0.00013268002981093742,0.022127396389662293,99.99388377423554,near-exact raster match,aq_daily_perceived_benefit_correlations.pdf
+Supplementary Figure 10,300,True,0.0,0.0,100.0,pixel-identical,detailed_hlm_moderators.pdf
+Supplementary Figure 11,300,True,0.6262610171295394,10.45648714409178,99.30531879775742,reader-facing native recreation of legacy crop/relabel,Figure_S11_measurement_reliability.pdf

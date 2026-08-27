@@ -1,0 +1,5 @@
+analysis_family,matched_rows,expected_rows,missing_keys,all_n_match,max_rho_absolute_error,max_q_absolute_error,tolerance,within_tolerance
+Main Figure 3 BH-12 / Supplementary Table 4,12,12,,True,4.132387136923654e-07,3.3832497037256104e-07,0.0005,True
+Main Figure 3 BH-24 / Supplementary Table 5,24,24,,True,4.947821144929421e-05,4.75353931883582e-06,0.0005,True
+Main Figure 4 BH-6 / Supplementary Table 6,6,6,,True,0.0,0.0,0.0005,True
+Main Figure 4 BH-24 / Supplementary Table 7,24,24,,True,0.0,0.0,0.0005,True

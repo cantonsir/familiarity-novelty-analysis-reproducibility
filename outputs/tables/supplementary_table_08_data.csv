@@ -1,0 +1,6 @@
+path_id,analysis_sample,relationship,n,standardized_coefficient,ci_low,ci_high,ci_excludes_zero,n_bootstrap,seed,recomputed_check
+Daily_to_Flow,Primary QC-clean,Daily familiarity $\rightarrow$ Flow (common 12),303,.022,-.080,.121,no,10000,20260724,0.02209147599426991
+AQ_to_Flow,Primary QC-clean,AQ $\rightarrow$ Flow (common 12),303,-.348,-.448,-.240,yes,10000,20260724,-0.347398994115773
+AQ_to_Maemuki,Primary QC-clean,AQ $\rightarrow$ Maemuki,303,-.398,-.476,-.322,yes,10000,20260724,-0.3980391150607858
+Flow_to_Maemuki,Primary QC-clean,Flow (common 12) $\rightarrow$ Maemuki,303,.514,.432,.591,yes,10000,20260724,0.5138943820582237
+Daily_with_AQ,Primary QC-clean,Daily familiarity--AQ correlation,303,.229,.125,.329,yes,10000,20260724,0.22913988105677752

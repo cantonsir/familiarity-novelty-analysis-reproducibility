@@ -1,0 +1,17 @@
+table_id,input_role,analysis_scope,provenance
+01,frozen aggregate rows,E1--E5,Active Supplement cohort crosswalk
+02,frozen protocol metadata,E1--E5,Active Supplement protocol audit
+03,frozen aggregate demographic rows,Primary E2--E5 n=303,Active generated demographic component
+04,recomputed from compact participant file,Matched E3/E5 n=153,Spearman BH-12 with active display freeze validated within tolerance
+05,recomputed from compact participant file,Matched E3/E5 n=153,Spearman BH-24 with active display freeze validated within tolerance
+06,recomputed from compact participant file,Primary E2--E5 n=303,Spearman BH-6
+07,recomputed from compact participant file,Primary E2--E5 n=303,Spearman BH-24
+08,refitted MLW point estimates plus frozen stratified-bootstrap intervals,Primary E2--E5 n=303,One-df random-x covariance path model; seed 20260724 and 10000 resamples
+09,frozen result rows,Matched E3/E5 n=153,Selected converged mixed model
+10,frozen result rows,Matched E3/E5 n=153 and all completers n=155,Item-aware and richer-model sensitivities
+11,frozen result rows,Matched E3/E5 n=153,HLM and CR1 BH-12
+12,frozen result rows,Matched E3/E5 n=153,Joint-trait BH-12
+13,frozen result rows,Matched E3/E5 n=153,HLM and CR1 BH-24
+14,frozen result rows,Matched E3/E5 n=153,Seed 20260724 and 10000 balanced partitions
+15,frozen task-pool metadata,E1--E5,Active stimulus taxonomy
+16,frozen derived-feature metadata,E2--E5,Active questionnaire feature dictionary

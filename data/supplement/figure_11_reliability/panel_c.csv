@@ -1,0 +1,9 @@
+experiment_label,experiment,sample,scale,n,n_components,component_definition,cronbach_alpha,ci_low,ci_high,n_bootstrap,seed,ci_method
+Experiment 3,3,QC-clean,AQ,22,50,binary items,0.7880191351465058,0.6152598281981625,0.8654934136626943,10000,20261724,participant-bootstrap percentile
+Experiment 3,3,QC-clean,Daily NF,22,8,items,0.7332968005732834,0.4284498543434453,0.8575441901395734,10000,20261725,participant-bootstrap percentile
+Experiment 3,3,QC-clean,Flow,22,12,items,0.7466753220993031,0.5030411767392515,0.8497038030161788,10000,20261726,participant-bootstrap percentile
+Experiment 3,3,QC-clean,Maemuki,22,9,equal-weight subscales,0.8849155491912987,0.7274481111631642,0.9317944243303726,10000,20261727,participant-bootstrap percentile
+Experiment 5,5,QC-clean,AQ,131,50,binary items,0.7947119326469305,0.735196681922351,0.8383325280864478,10000,20261728,participant-bootstrap percentile
+Experiment 5,5,QC-clean,Daily NF,131,8,items,0.7602482540422995,0.6805331559860364,0.8159568771386847,10000,20261729,participant-bootstrap percentile
+Experiment 5,5,QC-clean,Flow,131,13,items,0.7179772211445781,0.6214188412731886,0.78432678237845,10000,20261730,participant-bootstrap percentile
+Experiment 5,5,QC-clean,Maemuki,131,9,equal-weight subscales,0.8340553107473727,0.7870126395699437,0.8678983424011801,10000,20261731,participant-bootstrap percentile

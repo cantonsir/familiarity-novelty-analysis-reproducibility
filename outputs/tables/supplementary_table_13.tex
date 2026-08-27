@@ -1,0 +1,52 @@
+\begingroup
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.12}
+\setlength\LTleft{\fill}
+\setlength\LTright{\fill}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{2.25cm}rrrrrrrr@{}}
+\caption{Complete exploratory Daily-item moderation family with original mixed-model and item-aware sensitivity inference.}\label{tab:daily-item-trajectory-moderators}\\
+\toprule
+Daily item & $b$ & SE$_{\mathrm{HLM}}$ & $P_{\mathrm{HLM}}$ & $q_{\mathrm{HLM}}$ & SE$_{\mathrm{CR1}}$ & $P_{\mathrm{CR1}}$ & $q_{\mathrm{CR1}}$ & CR1 BH \\
+\midrule
+\endfirsthead
+\caption[]{Complete exploratory Daily-item moderation family with original mixed-model and item-aware sensitivity inference. (continued)}\\
+\toprule
+Daily item & $b$ & SE$_{\mathrm{HLM}}$ & $P_{\mathrm{HLM}}$ & $q_{\mathrm{HLM}}$ & SE$_{\mathrm{CR1}}$ & $P_{\mathrm{CR1}}$ & $q_{\mathrm{CR1}}$ & CR1 BH \\
+\midrule
+\endhead
+\midrule
+\multicolumn{9}{r}{\footnotesize Continued on next page}\\
+\endfoot
+\bottomrule
+\endlastfoot
+\multicolumn{9}{l}{\textbf{Face}} \\
+Food/cuisine & .00039 & .00285 & .89090 & .96814 & .00262 & .88141 & .97729 & no \\
+Places/activities & .00026 & .00285 & .92611 & .96814 & .00244 & .91382 & .97729 & no \\
+Movies/videos & -.00321 & .00285 & .26006 & .62415 & .00258 & .21370 & .59905 & no \\
+Restaurant & .00110 & .00285 & .69839 & .89310 & .00251 & .65952 & .97729 & no \\
+Clothes & .00352 & .00285 & .21633 & .57689 & .00236 & .13535 & .59905 & no \\
+Digital games & .00018 & .00285 & .94959 & .96814 & .00321 & .95520 & .97729 & no \\
+Books/magazines & .00058 & .00285 & .83787 & .96814 & .00296 & .84395 & .97729 & no \\
+Snacks/treats & .00259 & .00285 & .36285 & .72570 & .00262 & .32197 & .70248 & no \\
+\multicolumn{9}{l}{\textbf{Scenery}} \\
+Food/cuisine & .00151 & .00285 & .59548 & .89310 & .00453 & .73807 & .97729 & no \\
+Places/activities & .00513 & .00285 & .07177 & .33773 & .00372 & .16796 & .59905 & no \\
+Movies/videos & -.00116 & .00285 & .68399 & .89310 & .00408 & .77594 & .97729 & no \\
+Restaurant & .00969 & .00285 & .000677 & .00812 & .00378 & .01049 & .12586 & no \\
+Clothes & .00011 & .00285 & .96814 & .96814 & .00400 & .97729 & .97729 & no \\
+Digital games & .00492 & .00285 & .08443 & .33773 & .00424 & .24601 & .59905 & no \\
+Books/magazines & .00243 & .00285 & .39356 & .72656 & .00440 & .58045 & .97729 & no \\
+Snacks/treats & .01156 & .00285 & \ensuremath{4.96\!\times\!10^{-5}} & .00119 & .00378 & .00220 & .05279 & no \\
+\multicolumn{9}{l}{\textbf{Geometry}} \\
+Food/cuisine & .00418 & .00285 & .14248 & .42745 & .00359 & .24359 & .59905 & no \\
+Places/activities & .00107 & .00285 & .70703 & .89310 & .00388 & .78272 & .97729 & no \\
+Movies/videos & -.00431 & .00285 & .13081 & .42745 & .00374 & .24961 & .59905 & no \\
+Restaurant & -.00571 & .00285 & .04501 & .27004 & .00364 & .11687 & .59905 & no \\
+Clothes & -.00628 & .00285 & .02753 & .22023 & .00367 & .08697 & .59905 & no \\
+Digital games & -.00287 & .00285 & .31340 & .68378 & .00323 & .37369 & .74738 & no \\
+Books/magazines & .00116 & .00285 & .68506 & .89310 & .00306 & .70601 & .97729 & no \\
+Snacks/treats & .00212 & .00285 & .45737 & .78406 & .00362 & .55795 & .97729 & no \\
+\end{longtable}
+\noindent\begin{minipage}{\textwidth}\footnotesize\textit{Note.} Each coefficient is the standardized Daily-item by category by comparison-position interaction in the matched E3/E5 cohort (153 participants; 33,048 trials). Original HLM q values use BH across 24 tests. CR1 uses participant-by-category fixed effects, subcategory fixed effects, and multiway clustering over participant, familiar stimulus and novel stimulus, with BH across the same 24 coefficients. The fixed coefficient is unchanged; only the covariance estimator differs. HLM denotes the selected converged mixed-model fallback. CR1 BH indicates whether q<.05.\end{minipage}
+\endgroup

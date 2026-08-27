@@ -1,0 +1,8 @@
+experiment,setting,completers,qc_clean,manuscript_role
+1,Laboratory,15,--,"Pilot; excluded from current analyses"
+2,Laboratory,24,24,Integrated questionnaire/sample scope
+3,Laboratory,22,22,"Integrated scope; matched visual analysis"
+4,Online,126,126,"Integrated scope; descriptive target-shift analysis"
+5,Online,133,131,"Integrated scope; matched visual analysis"
+3 and 5 combined,Mixed,155,153,Matched trial-level cohort
+2--5 combined,Mixed,305,303,Primary integrated questionnaire/sample scope

@@ -1,0 +1,4 @@
+measure,column,displayed,n,spearman_rho,p_value,q_value_bh3
+Daily familiarity,4_nf_daily,False,303,0.23449507768316488,3.746431378058234e-05,5.619647067087351e-05
+Novelty-seeking benefit,4_1_n_affect_daily,True,303,-0.2564158690743741,6.161709167330189e-06,1.8485127501990567e-05
+Familiarity-seeking benefit,4_2_f_affect_daily,True,303,-0.20627599418639161,0.00030065579999421756,0.00030065579999421756

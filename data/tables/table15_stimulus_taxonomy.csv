@@ -1,0 +1,38 @@
+category,subcategory,E1,E2,E3,E4,E5
+Face,Female--Asian--Adult,1,1,1,1,1
+Face,Female--Asian--Young-adult,1,1,1,1,1
+Face,Female--Black--Adult,1,1,1,1,1
+Face,Female--Black--Young-adult,1,1,1,1,1
+Face,Female--Latino--Adult,1,1,1,1,1
+Face,Female--Latino--Young-adult,1,1,1,1,1
+Face,Female--White--Adult,1,1,1,1,1
+Face,Female--White--Young-adult,1,1,1,1,1
+Face,Male--Asian--Adult,1,1,1,1,1
+Face,Male--Asian--Young-adult,1,1,1,1,1
+Face,Male--Black--Adult,1,1,1,1,1
+Face,Male--Black--Young-adult,1,1,1,1,1
+Face,Male--Latino--Adult,1,1,1,1,1
+Face,Male--Latino--Young-adult,1,1,1,1,1
+Face,Male--White--Adult,1,1,1,1,1
+Face,Male--White--Young-adult,1,1,1,1,1
+Scenery,Beach,1,0,1,1,1
+Scenery,Desert,1,0,1,1,1
+Scenery,Flower,1,0,0,0,0
+Scenery,Lake,1,0,0,0,0
+Scenery,Mountain,1,1,1,1,1
+Scenery,River,1,1,1,1,1
+Scenery,Sky,1,0,0,0,0
+Geometry,Complex (symmetry not encoded),1,1,0,0,0
+Geometry,Simple (symmetry not encoded),1,1,0,0,0
+Geometry,Complex--asymmetric,0,0,1,1,1
+Geometry,Complex--symmetric,0,0,1,1,1
+Geometry,Simple--asymmetric,0,0,1,1,1
+Geometry,Simple--symmetric,0,0,1,1,1
+Car,Diagonal sedan,1,0,0,0,0
+Car,Diagonal sports car,1,1,0,0,0
+Car,Diagonal SUV,1,1,0,0,0
+Car,Diagonal truck,1,0,0,0,0
+Car,Front sedan,1,0,0,0,0
+Car,Front sports car,1,0,0,0,0
+Car,Front SUV,1,0,0,0,0
+Car,Front truck,1,0,0,0,0

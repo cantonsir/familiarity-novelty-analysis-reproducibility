@@ -1,0 +1,13 @@
+left_label,left_column,right_label,right_column,n,rho,p_value,q_bh,bh,display_source
+Face FNI,face_fni,AQ,aq_score,153,-0.288895,0.000293065,0.002921,yes,active_display_freeze_within_tolerance
+Face FNI,face_fni,Daily familiarity,daily_familiarity,153,-0.006476,0.936675,0.936675,no,active_display_freeze_within_tolerance
+Face FNI,face_fni,Flow attitude,flow_original,153,0.201971,0.012293,0.049174,yes,active_display_freeze_within_tolerance
+Face FNI,face_fni,Maemuki,maemuki_score,153,0.278657,0.000487,0.002921,yes,active_display_freeze_within_tolerance
+Geometry FNI,geometry_fni,AQ,aq_score,153,0.08595913011911449,0.29074302555046005,0.6977832613211041,no,recomputed
+Geometry FNI,geometry_fni,Daily familiarity,daily_familiarity,153,0.07337476572577048,0.36739244154944917,0.6997660213697022,no,recomputed
+Geometry FNI,geometry_fni,Flow attitude,flow_original,153,-0.06734102985710827,0.40819684579899296,0.6997660213697022,no,recomputed
+Geometry FNI,geometry_fni,Maemuki,maemuki_score,153,-0.15082840023560187,0.06274339966065255,0.18823019898195764,no,recomputed
+Scenery FNI,scenery_fni,AQ,aq_score,153,0.02318406187850729,0.7760598041407986,0.8466106954263257,no,recomputed
+Scenery FNI,scenery_fni,Daily familiarity,daily_familiarity,153,0.056845228703183544,0.48521784573182813,0.7268260764406315,no,recomputed
+Scenery FNI,scenery_fni,Flow attitude,flow_original,153,-0.04206180824918656,0.6056883970338596,0.7268260764406315,no,recomputed
+Scenery FNI,scenery_fni,Maemuki,maemuki_score,153,-0.04357149558387948,0.592799303027969,0.7268260764406315,no,recomputed

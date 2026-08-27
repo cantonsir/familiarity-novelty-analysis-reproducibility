@@ -1,0 +1,36 @@
+race_response,experiment_label,count
+Asian,2,19
+Asian,3,12
+Asian,4,14
+Asian,5,20
+Asian,Pooled,65
+Black / African American,2,0
+Black / African American,3,0
+Black / African American,4,13
+Black / African American,5,21
+Black / African American,Pooled,34
+Hispanic / Latino,2,1
+Hispanic / Latino,3,4
+Hispanic / Latino,4,11
+Hispanic / Latino,5,4
+Hispanic / Latino,Pooled,20
+White / Caucasian,2,4
+White / Caucasian,3,6
+White / Caucasian,4,76
+White / Caucasian,5,78
+White / Caucasian,Pooled,164
+Multiracial / Mixed,2,0
+Multiracial / Mixed,3,0
+Multiracial / Mixed,4,10
+Multiracial / Mixed,5,4
+Multiracial / Mixed,Pooled,14
+Other,2,0
+Other,3,0
+Other,4,2
+Other,5,0
+Other,Pooled,2
+Prefer not to say,2,0
+Prefer not to say,3,0
+Prefer not to say,4,0
+Prefer not to say,5,4
+Prefer not to say,Pooled,4

@@ -1,0 +1,24 @@
+release_column,original_or_manuscript_name,data_type,scale_or_theoretical_range,observed_range_or_levels,nonmissing_n,description
+analysis_record_id,release pseudonym,string,A001--A305,305 unique release values,305,Join key for released analysis tables; not a platform or manuscript display ID.
+experiment,experiment,integer,2--5,2 to 5,305,Experiment number.
+mode,setting,category,lab or online,lab; online,305,Data-collection mode.
+in_primary,QC-clean membership,boolean,True or False,False; True,305,True for the frozen primary integrated cohort (n=303); False only for all-completer sensitivity rows.
+face_fni,Face FNI,number,theoretical -3 to +3,-1.86 to 2.63853,305,Participant Face familiarity/novelty index; higher values indicate familiarity preference.
+geometry_fni,Geometry FNI,number,theoretical -3 to +3,-1.9025 to 2.42059,305,Participant Geometry familiarity/novelty index; higher values indicate familiarity preference.
+scenery_fni,Scenery FNI,number,theoretical -3 to +3,-2.27941 to 1.94118,305,Participant Scenery familiarity/novelty index; higher values indicate familiarity preference.
+aq_score,AQ_score,integer,0--50,5 to 43,305,Autism-Spectrum Quotient total; higher values indicate stronger autistic-trait tendency.
+daily_familiarity,4_NF-daily / 4_nf_daily,number,-3 to +3,-3 to 3,305,Mean of eight daily novelty/familiarity items; higher values indicate familiarity seeking.
+maemuki_score,Maemuki_score,number,approximately -3 to +3,-1.0844 to 2.416,305,Composite positive/forward psychological orientation score.
+flow_original,10_Flow-attitude,number,-3 to +3,-1.15385 to 2.92308,305,"Historical experiment-specific Flow implementation used in Figures 3--5 and Tables 4, 6, and 7."
+flow_common12,10_Flow-attitude common 12,number,-3 to +3,-1.08333 to 2.91667,305,Harmonized common-12 Flow score used in the observed-variable joint model.
+negative_capability,12_Negative_Capability,number,-3 to +3,-3 to 3,281,"Nine-item Negative Capability score; collected in Experiments 3--5, hence missing for Experiment 2."
+novelty_benefit,4_1_N-affect_daily,number,-3 to +3,-3 to 3,305,Mean perceived positive benefit of novelty seeking.
+familiarity_benefit,4_2_F-affect_daily,number,-3 to +3,-3 to 3,305,Mean perceived positive benefit of familiarity seeking.
+daily_food,4_food/cuisine,integer,-3 to +3,-3 to 3,305,Daily food novelty/familiarity item; higher values indicate familiarity.
+daily_places,4_places/activities,integer,-3 to +3,-3 to 3,305,Daily places/activities novelty/familiarity item; higher values indicate familiarity.
+daily_movies,4_movies or videos,integer,-3 to +3,-3 to 3,305,Daily movies/videos novelty/familiarity item; higher values indicate familiarity.
+daily_restaurant,4_restaurant,integer,-3 to +3,-3 to 3,305,Daily restaurant novelty/familiarity item; higher values indicate familiarity.
+daily_clothes,4_clothes,integer,-3 to +3,-3 to 3,305,Daily clothes novelty/familiarity item; higher values indicate familiarity.
+daily_games,4_digital games,integer,-3 to +3,-3 to 3,305,Daily digital-games novelty/familiarity item; higher values indicate familiarity.
+daily_books,4_books or magazines,integer,-3 to +3,-3 to 3,305,Daily books/magazines novelty/familiarity item; higher values indicate familiarity.
+daily_snacks,4_snacks or treats,integer,-3 to +3,-3 to 3,305,Daily snacks/treats novelty/familiarity item; higher values indicate familiarity.

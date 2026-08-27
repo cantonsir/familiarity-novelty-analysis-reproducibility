@@ -1,0 +1,23 @@
+exemplar,manuscript_profile_id,analysis_record_id,experiment,mode,selection_label,mean_category_fni,4_nf_daily,average_category_fni_daily_nf,mean_category_fni_percentile,average_index_percentile,same_sign_candidate_n,variable,raw_value,label,variable_order
+A,P092,A242,5,online,Author-selected familiarity-leaning case,0.8640686274509802,0.875,0.8695343137254901,100.0,90.32258064516128,22,face_fni,1.155735294117647,Face,0
+A,P092,A242,5,online,Author-selected familiarity-leaning case,0.8640686274509802,0.875,0.8695343137254901,100.0,90.32258064516128,22,geometry_fni,0.2794117647058823,Geometry,1
+A,P092,A242,5,online,Author-selected familiarity-leaning case,0.8640686274509802,0.875,0.8695343137254901,100.0,90.32258064516128,22,scenery_fni,1.1570588235294117,Scenery,2
+A,P092,A242,5,online,Author-selected familiarity-leaning case,0.8640686274509802,0.875,0.8695343137254901,100.0,90.32258064516128,22,4_food/cuisine,-3.0,Food,3
+A,P092,A242,5,online,Author-selected familiarity-leaning case,0.8640686274509802,0.875,0.8695343137254901,100.0,90.32258064516128,22,4_places/activities,1.0,Places,4
+A,P092,A242,5,online,Author-selected familiarity-leaning case,0.8640686274509802,0.875,0.8695343137254901,100.0,90.32258064516128,22,4_movies or videos,1.0,Movies,5
+A,P092,A242,5,online,Author-selected familiarity-leaning case,0.8640686274509802,0.875,0.8695343137254901,100.0,90.32258064516128,22,4_restaurant,2.0,Restaurants,6
+A,P092,A242,5,online,Author-selected familiarity-leaning case,0.8640686274509802,0.875,0.8695343137254901,100.0,90.32258064516128,22,4_clothes,2.0,Clothes,7
+A,P092,A242,5,online,Author-selected familiarity-leaning case,0.8640686274509802,0.875,0.8695343137254901,100.0,90.32258064516128,22,4_digital games,-1.0,Games,8
+A,P092,A242,5,online,Author-selected familiarity-leaning case,0.8640686274509802,0.875,0.8695343137254901,100.0,90.32258064516128,22,4_books or magazines,3.0,Books,9
+A,P092,A242,5,online,Author-selected familiarity-leaning case,0.8640686274509802,0.875,0.8695343137254901,100.0,90.32258064516128,22,4_snacks or treats,2.0,Snacks,10
+B,P101,A251,5,online,Author-selected novelty-leaning case,-0.907156862745098,-1.875,-1.391078431372549,1.2903225806451613,0.6451612903225806,21,face_fni,-0.1326470588235294,Face,0
+B,P101,A251,5,online,Author-selected novelty-leaning case,-0.907156862745098,-1.875,-1.391078431372549,1.2903225806451613,0.6451612903225806,21,geometry_fni,-1.6913235294117646,Geometry,1
+B,P101,A251,5,online,Author-selected novelty-leaning case,-0.907156862745098,-1.875,-1.391078431372549,1.2903225806451613,0.6451612903225806,21,scenery_fni,-0.8975,Scenery,2
+B,P101,A251,5,online,Author-selected novelty-leaning case,-0.907156862745098,-1.875,-1.391078431372549,1.2903225806451613,0.6451612903225806,21,4_food/cuisine,-1.0,Food,3
+B,P101,A251,5,online,Author-selected novelty-leaning case,-0.907156862745098,-1.875,-1.391078431372549,1.2903225806451613,0.6451612903225806,21,4_places/activities,-3.0,Places,4
+B,P101,A251,5,online,Author-selected novelty-leaning case,-0.907156862745098,-1.875,-1.391078431372549,1.2903225806451613,0.6451612903225806,21,4_movies or videos,-2.0,Movies,5
+B,P101,A251,5,online,Author-selected novelty-leaning case,-0.907156862745098,-1.875,-1.391078431372549,1.2903225806451613,0.6451612903225806,21,4_restaurant,-2.0,Restaurants,6
+B,P101,A251,5,online,Author-selected novelty-leaning case,-0.907156862745098,-1.875,-1.391078431372549,1.2903225806451613,0.6451612903225806,21,4_clothes,-2.0,Clothes,7
+B,P101,A251,5,online,Author-selected novelty-leaning case,-0.907156862745098,-1.875,-1.391078431372549,1.2903225806451613,0.6451612903225806,21,4_digital games,-3.0,Games,8
+B,P101,A251,5,online,Author-selected novelty-leaning case,-0.907156862745098,-1.875,-1.391078431372549,1.2903225806451613,0.6451612903225806,21,4_books or magazines,-3.0,Books,9
+B,P101,A251,5,online,Author-selected novelty-leaning case,-0.907156862745098,-1.875,-1.391078431372549,1.2903225806451613,0.6451612903225806,21,4_snacks or treats,1.0,Snacks,10

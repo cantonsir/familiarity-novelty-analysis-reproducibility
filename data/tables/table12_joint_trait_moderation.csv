@@ -1,0 +1,13 @@
+category,trait,b,se,z,p,q_bh,bh
+Face,AQ,-.00032,.00053,-.614,.53944,.91819,no
+Face,Maemuki,.00099,.00765,.129,.89709,.91819,no
+Face,Flow Attitude,.00061,.00590,.103,.91819,.91819,no
+Face,Negative Capability,.00138,.00464,.297,.76643,.91819,no
+Scenery,AQ,-.00007,.00053,-.140,.88883,.91819,no
+Scenery,Maemuki,-.01103,.00765,-1.442,.14927,.35824,no
+Scenery,Flow Attitude,.01103,.00590,1.870,.06143,.18429,no
+Scenery,Negative Capability,.00131,.00464,.283,.77750,.91819,no
+Geometry,AQ,-.00029,.00053,-.549,.58313,.91819,no
+Geometry,Maemuki,.01540,.00765,2.014,.04404,.18429,no
+Geometry,Flow Attitude,-.01802,.00590,-3.054,.00226,.02708,yes
+Geometry,Negative Capability,-.00886,.00464,-1.910,.05609,.18429,no

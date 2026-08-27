@@ -1,0 +1,25 @@
+left_label,right_label,n,rho,p_value,q_bh,bh
+Face FNI,Books/magazines,153,-.0014,.98602,.98602,no
+Face FNI,Clothes,153,.0058,.94285,.98602,no
+Face FNI,Digital games,153,.0187,.81863,.98602,no
+Face FNI,Food/cuisine,153,.0773,.34256,.81561,no
+Face FNI,Movies/videos,153,-.1248,.12425,.55304,no
+Face FNI,Places/activities,153,-.0041,.95997,.98602,no
+Face FNI,Restaurant,153,-.0413,.61237,.95486,no
+Face FNI,Snacks/treats,153,.0791,.33092,.81561,no
+Geometry FNI,Books/magazines,153,.1423,.07941,.55304,no
+Geometry FNI,Clothes,153,-.0366,.65318,.95486,no
+Geometry FNI,Digital games,153,-.1204,.13826,.55304,no
+Geometry FNI,Food/cuisine,153,.0282,.72968,.97290,no
+Geometry FNI,Movies/videos,153,.0340,.67636,.95486,no
+Geometry FNI,Places/activities,153,.1515,.06165,.55304,no
+Geometry FNI,Restaurant,153,.0092,.90996,.98602,no
+Geometry FNI,Snacks/treats,153,.1436,.07649,.55304,no
+Scenery FNI,Books/magazines,153,.1336,.09969,.55304,no
+Scenery FNI,Clothes,153,-.0182,.82316,.98602,no
+Scenery FNI,Digital games,153,-.0674,.40780,.81561,no
+Scenery FNI,Food/cuisine,153,.0359,.65945,.95486,no
+Scenery FNI,Movies/videos,153,.0353,.66477,.95486,no
+Scenery FNI,Places/activities,153,.0723,.37479,.81561,no
+Scenery FNI,Restaurant,153,.0728,.37144,.81561,no
+Scenery FNI,Snacks/treats,153,.0893,.27206,.81561,no
